@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+//First page
+
+.sec1{
+    background: radial-gradient(rgb(139, 195, 245), #1294b8);
+    height: 100vh;
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo{
+        display: flex;
+        margin-top: 25px;
+        margin-left:  4em ;
+        font-size: 35px;
+        color: ghostwhite;
+        font-weight:900;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        list-style: none;
+        color: ghostwhite;
+        padding-top: 50px;
+    }
+    li{
+        padding: 0 20px;
+        font-weight:600;
+    }
+    .social-link{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-content: end;
+        margin-top: 35px;
+        margin-right: 200px;
+        height: 25px;
+        width: 25px;
+    }
+    .page-one-content{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 150px;
+        .right-img{
+            max-width: 800px;
+            margin-right: 150px;
+            padding-bottom: 100px;
+            width: auto;
+            height: auto;
+        }
+        .left-content{
+            padding-left: 70px;
+            h2{
+                font-size: 70px;
+                font-weight: 900;
+                word-spacing: -5px;
+                line-height: 60px;
+            }
+            p{
+                font-size: 23px;
+                padding: 40px 0;
+                line-height: 30px;
+            }
+            .form{
+                display: flex;
+                flex-direction: row;
+            }
+            .input-email{
+                width: 500px;
+                height: 60px;
+                border-radius: 30px;
+                border: none;
+                padding-left: 20px;
+                font-size: large;
+            }
+            .input-sub{
+                font-size: large;
+                padding: 5px;
+                border-radius: 30px;
+                margin-top: 5px;
+                margin-left: -155px;
+                height: 50px;
+                width: 150px;
+                background:#1294b8;
+                color: white;
+                border: 0;
+            }
+        }
+     
+    }
+}
+
