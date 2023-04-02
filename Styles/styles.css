@@ -95,4 +95,45 @@
   background: #1294b8;
   color: white;
   border: 0;
+}
+
+.sec2 {
+  padding-top: 150px;
+  background-color: ghostwhite;
+  height: 100vh;
+}
+.sec2 h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.sec2 p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: gray;
+  line-height: 25px;
+  font-size: larger;
+}
+.sec2 .cases {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding-top: 250px;
+}
+.sec2 .case {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: ghostwhite;
+  height: 500px;
+  width: 550px;
+  border-radius: 10px;
+  background: radial-gradient(rgb(139, 195, 245), #1294b8);
+  margin: 0 10px;
 }/*# sourceMappingURL=styles.css.map */
