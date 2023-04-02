@@ -105,6 +105,7 @@
   border: 0;
 }
 
+/*----------Section 2----------*/
 .sec2 {
   padding-top: 150px;
   background-color: ghostwhite;
@@ -159,4 +160,6 @@
   color: ghostwhite;
   padding: 0 25px;
   font-size: 1.3em;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*----------Section 3----------*//*# sourceMappingURL=styles.css.map */
