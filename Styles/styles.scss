@@ -8,10 +8,12 @@
 
 
 //First page
-
+.wrapper{
+    
+}
 .sec1{
     background: radial-gradient(rgb(139, 195, 245), #1294b8);
-    height: 100vh;
+    height: 969px;
     nav{
         display: flex;
         flex-direction: row;
@@ -20,7 +22,7 @@
     .logo{
         display: flex;
         margin-top: 25px;
-        margin-left:  4em ;
+        margin-left:  10%;
         font-size: 35px;
         color: ghostwhite;
         font-weight:900;
@@ -43,7 +45,7 @@
         justify-content: end;
         align-content: end;
         margin-top: 35px;
-        margin-right: 200px;
+        padding-right: 10%;
         height: 25px;
         width: 25px;
     }
@@ -55,12 +57,17 @@
         padding-top: 150px;
         .right-img{
             max-width: 800px;
+            min-width: 400px;
             margin-right: 150px;
             padding-bottom: 100px;
-            width: auto;
+            width: 100%;
             height: auto;
         }
         .left-content{
+            max-width: 650px;
+            min-width: 325px;
+            width: 100%;
+            width: 650px;
             padding-left: 70px;
             h2{
                 font-size: 70px;
@@ -78,6 +85,9 @@
                 flex-direction: row;
             }
             .input-email{
+                max-width: 500px;
+                min-width: 250px;
+                width: 100%;
                 width: 500px;
                 height: 60px;
                 border-radius: 30px;
@@ -106,7 +116,7 @@
     
     padding-top: 150px;
     background-color: ghostwhite;
-    height: 100vh;
+    height: 969px;
     h3{
         display: flex;
         justify-content: center;
@@ -137,10 +147,25 @@
         align-items: center;
         color: ghostwhite;
         height: 500px;
-        width: 550px;
+        width: 500px;
         border-radius: 10px;
         background: radial-gradient(rgb(139, 195, 245), #1294b8);
         margin: 0 10px;
+        img{
+            width: 4em;
+            padding-bottom: 2em;
+        }
+        h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+        p{
+            color: ghostwhite;
+            padding: 0 25px;
+            font-size: 1.30em;
+        }
     }
 
 }

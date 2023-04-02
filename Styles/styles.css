@@ -7,7 +7,7 @@
 
 .sec1 {
   background: radial-gradient(rgb(139, 195, 245), #1294b8);
-  height: 100vh;
+  height: 969px;
 }
 .sec1 nav {
   display: flex;
@@ -17,7 +17,7 @@
 .sec1 .logo {
   display: flex;
   margin-top: 25px;
-  margin-left: 4em;
+  margin-left: 10%;
   font-size: 35px;
   color: ghostwhite;
   font-weight: 900;
@@ -40,7 +40,7 @@
   justify-content: end;
   align-content: end;
   margin-top: 35px;
-  margin-right: 200px;
+  padding-right: 10%;
   height: 25px;
   width: 25px;
 }
@@ -53,12 +53,17 @@
 }
 .sec1 .page-one-content .right-img {
   max-width: 800px;
+  min-width: 400px;
   margin-right: 150px;
   padding-bottom: 100px;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 .sec1 .page-one-content .left-content {
+  max-width: 650px;
+  min-width: 325px;
+  width: 100%;
+  width: 650px;
   padding-left: 70px;
 }
 .sec1 .page-one-content .left-content h2 {
@@ -77,6 +82,9 @@
   flex-direction: row;
 }
 .sec1 .page-one-content .left-content .input-email {
+  max-width: 500px;
+  min-width: 250px;
+  width: 100%;
   width: 500px;
   height: 60px;
   border-radius: 30px;
@@ -100,7 +108,7 @@
 .sec2 {
   padding-top: 150px;
   background-color: ghostwhite;
-  height: 100vh;
+  height: 969px;
 }
 .sec2 h3 {
   display: flex;
@@ -132,8 +140,23 @@
   align-items: center;
   color: ghostwhite;
   height: 500px;
-  width: 550px;
+  width: 500px;
   border-radius: 10px;
   background: radial-gradient(rgb(139, 195, 245), #1294b8);
   margin: 0 10px;
+}
+.sec2 .case img {
+  width: 4em;
+  padding-bottom: 2em;
+}
+.sec2 .case h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.sec2 .case p {
+  color: ghostwhite;
+  padding: 0 25px;
+  font-size: 1.3em;
 }/*# sourceMappingURL=styles.css.map */
