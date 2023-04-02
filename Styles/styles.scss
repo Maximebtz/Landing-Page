@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 
@@ -18,7 +17,7 @@
     }
     .logo{
         display: flex;
-        margin-top: 25px;
+        margin-top: 35px;
         margin-left:  10%;
         font-size: 35px;
         color: ghostwhite;
@@ -35,6 +34,11 @@
     li{
         padding: 0 20px;
         font-weight:600;
+        font-size: 1.25em;
+        a{
+            color: ghostwhite;
+            text-decoration: none;
+        }
     }
     .social-link{
         display: flex;
@@ -103,6 +107,10 @@
                 background:#1294b8;
                 color: white;
                 border: 0;
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgb(85, 154, 214);
+                }
             }
         }
     }
@@ -114,6 +122,15 @@
     padding-top: 150px;
     background-color: ghostwhite;
     height: 969px;
+    .cases{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        padding-top: 250px;
+        
+    }
     h3{
         display: flex;
         justify-content: center;
@@ -127,15 +144,7 @@
         text-align: center;
         color: gray;
         line-height: 25px;
-        font-size: larger;
-    }
-    .cases{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 500px;
-        padding-top: 250px;
+        font-size: 25px;
     }
     .case{
         display: flex;
@@ -147,7 +156,12 @@
         width: 500px;
         border-radius: 10px;
         background: radial-gradient(rgb(139, 195, 245), #1294b8);
-        margin: 0 10px;
+        margin: 0 10px;box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 10px;
+        &:hover{
+            cursor: pointer;
+            transform:translateY(-5px);
+            box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 10px;
+        }
         img{
             width: 4em;
             padding-bottom: 2em;
@@ -168,3 +182,154 @@
 
 /*----------Section 3----------*/
 
+.sec3{
+    padding-top: 150px;
+    background-color: rgb(240, 240, 240);
+    height: 969px;
+    .page-3-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: gray;
+            max-width: 700px;
+            line-height: 25px;
+            font-size: 25px;
+        }
+    }
+}
+
+/*----------Section 4----------*/
+
+.sec4{
+    background-color: ghostwhite;
+    height: 969px;
+    .upper-team-page{
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 150px;
+        h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 1000px;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: gray;
+            max-width: 900px;
+            line-height: 25px;
+            font-size: 25px;
+        }
+    }
+    .lower-team-page{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .adjust-content{
+            margin-bottom: 100px;
+            h6{
+                font-size: 25px;
+            }
+        }
+        figure{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 50px;
+            text-align: center;
+        }
+        .overflow{
+            max-height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        img{
+            width: 100%;
+            max-width: 250px;
+            min-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            filter: grayscale(1);
+            &:hover{
+                cursor: pointer;
+                filter: none;
+                transform: scale(1.1);
+                transition: all 0.5s ease-in-out;
+            }
+            figcaption{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        h5{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        p{
+            color: rgb(150, 150, 150);
+            font-size: 15px;
+        }
+    }    
+}
+
+/*----------Section 5----------*/
+
+.parallax {
+    /* The image used */
+    background-image: url("/img/parallax.png");
+    /* Full height */
+    height: 100%;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-color{
+    background-color: rgba(0, 0, 0, 0.507);
+    height: 100%;
+}
+
+.sec5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+    .parallax-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

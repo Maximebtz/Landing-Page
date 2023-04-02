@@ -16,7 +16,7 @@
 }
 .sec1 .logo {
   display: flex;
-  margin-top: 25px;
+  margin-top: 35px;
   margin-left: 10%;
   font-size: 35px;
   color: ghostwhite;
@@ -33,6 +33,11 @@
 .sec1 li {
   padding: 0 20px;
   font-weight: 600;
+  font-size: 1.25em;
+}
+.sec1 li a {
+  color: ghostwhite;
+  text-decoration: none;
 }
 .sec1 .social-link {
   display: flex;
@@ -104,12 +109,24 @@
   color: white;
   border: 0;
 }
+.sec1 .page-one-content .left-content .input-sub:hover {
+  cursor: pointer;
+  background-color: rgb(85, 154, 214);
+}
 
 /*----------Section 2----------*/
 .sec2 {
   padding-top: 150px;
   background-color: ghostwhite;
   height: 969px;
+}
+.sec2 .cases {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding-top: 250px;
 }
 .sec2 h3 {
   display: flex;
@@ -124,15 +141,7 @@
   text-align: center;
   color: gray;
   line-height: 25px;
-  font-size: larger;
-}
-.sec2 .cases {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  padding-top: 250px;
+  font-size: 25px;
 }
 .sec2 .case {
   display: flex;
@@ -145,6 +154,12 @@
   border-radius: 10px;
   background: radial-gradient(rgb(139, 195, 245), #1294b8);
   margin: 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
+}
+.sec2 .case:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 10px;
 }
 .sec2 .case img {
   width: 4em;
@@ -162,4 +177,152 @@
   font-size: 1.3em;
 }
 
-/*----------Section 3----------*//*# sourceMappingURL=styles.css.map */
+/*----------Section 3----------*/
+.sec3 {
+  padding-top: 150px;
+  background-color: rgb(240, 240, 240);
+  height: 969px;
+}
+.sec3 .page-3-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec3 .page-3-content h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.sec3 .page-3-content p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: gray;
+  max-width: 700px;
+  line-height: 25px;
+  font-size: 25px;
+}
+
+/*----------Section 4----------*/
+.sec4 {
+  background-color: ghostwhite;
+  height: 969px;
+}
+.sec4 .upper-team-page {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.sec4 .upper-team-page h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1000px;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.sec4 .upper-team-page p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: gray;
+  max-width: 900px;
+  line-height: 25px;
+  font-size: 25px;
+}
+.sec4 .lower-team-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sec4 .lower-team-page .adjust-content {
+  margin-bottom: 100px;
+}
+.sec4 .lower-team-page .adjust-content h6 {
+  font-size: 25px;
+}
+.sec4 .lower-team-page figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  text-align: center;
+}
+.sec4 .lower-team-page .overflow {
+  max-height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.sec4 .lower-team-page img {
+  width: 100%;
+  max-width: 250px;
+  min-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  filter: grayscale(1);
+}
+.sec4 .lower-team-page img:hover {
+  cursor: pointer;
+  filter: none;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.sec4 .lower-team-page img figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sec4 .lower-team-page h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.sec4 .lower-team-page p {
+  color: rgb(150, 150, 150);
+  font-size: 15px;
+}
+
+/*----------Section 5----------*/
+.parallax {
+  /* The image used */
+  background-image: url("/img/parallax.png");
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-color {
+  background-color: rgba(0, 0, 0, 0.507);
+  height: 100%;
+}
+
+.sec5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 600px;
+}
+.sec5 .parallax-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */
