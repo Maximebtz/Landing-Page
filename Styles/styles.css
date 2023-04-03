@@ -111,7 +111,7 @@
 }
 .sec1 .page-one-content .left-content .input-sub:hover {
   cursor: pointer;
-  background-color: rgb(85, 154, 214);
+  background-color: rgb(29, 112, 184);
 }
 
 /*----------Section 2----------*/
@@ -325,4 +325,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: ghostwhite;
+  height: 600px;
+}
+.sec5 .parallax-content h5 {
+  font-size: 35px;
+  padding-bottom: 30px;
+}
+.sec5 .parallax-content p {
+  color: rgba(248, 248, 255, 0.801);
+  max-width: 1050px;
+  font-size: large;
+}
+.sec5 .parallax-content button {
+  width: 150px;
+  height: 50px;
+  margin-top: 40px;
+  border-radius: 5px;
+  border: ghostwhite solid 1px;
+  background: none;
+  color: ghostwhite;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
+  transition: all 0.5s ease-in-out;
+}
+.sec5 .parallax-content button:hover {
+  background-color: ghostwhite;
+  transform: translateY(-3px);
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 10px;
 }/*# sourceMappingURL=styles.css.map */
