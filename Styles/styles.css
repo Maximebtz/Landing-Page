@@ -270,12 +270,12 @@
   border-radius: 50%;
   margin-bottom: 20px;
   filter: grayscale(1);
+  transition: all 0.5s ease-in-out;
 }
 .sec4 .lower-team-page img:hover {
   cursor: pointer;
   filter: none;
   transform: scale(1.1);
-  transition: all 0.5s ease-in-out;
 }
 .sec4 .lower-team-page img figcaption {
   display: flex;
@@ -346,11 +346,130 @@
   background: none;
   color: ghostwhite;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .sec5 .parallax-content button:hover {
   background-color: ghostwhite;
   transform: translateY(-3px);
   color: black;
-  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+}
+
+/*----------Section 6----------*/
+.sec6 {
+  padding-top: 150px;
+  background-color: rgb(240, 240, 240);
+  height: 969px;
+}
+.sec6 .upper-6-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec6 h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.sec6 p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgba(128, 128, 128, 0.5);
+  line-height: 25px;
+  font-size: 25px;
+  max-width: 750px;
+  line-height: 40px;
+}
+.sec6 .images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  padding: 150px 10%;
+}
+.sec6 .images figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+}
+.sec6 .images img {
+  width: 70%;
+  justify-content: center;
+  opacity: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.sec6 .images img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 100%;
+}
+
+/*----------Section 7----------*/
+.sec7 {
+  background-color: ghostwhite;
+  height: 969px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 200px;
+}
+.sec7 .left-content-sec7 h2 {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+.sec7 .left-content-sec7 p {
+  display: flex;
+  justify-content: start;
+  text-align: left;
+  color: rgba(128, 128, 128, 0.5);
+  line-height: 30px;
+  font-size: 20px;
+  max-width: 570px;
+}
+.sec7 .left-content-sec7 .stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 50px;
+}
+.sec7 .left-content-sec7 .stats .stat-1 {
+  margin-right: 40px;
+}
+.sec7 .left-content-sec7 .stats h4 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.sec7 .left-content-sec7 .stats p {
+  font-size: 20px;
+}
+.sec7 .left-content-sec7 button {
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  margin-top: 40px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(50, 50, 255);
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+  transition: all 0.3s ease-in-out;
+}
+.sec7 .left-content-sec7 button:hover {
+  background-color: ghostwhite;
+  transform: translateY(-3px);
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+.sec7 .right-content-sec7 img {
+  width: 80%;
 }/*# sourceMappingURL=styles.css.map */
