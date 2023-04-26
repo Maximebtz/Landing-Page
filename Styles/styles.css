@@ -6,6 +6,19 @@
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  width: 7px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(170, 170, 170); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(84, 84, 84); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
 /*----------conrolls----------*/
 .go-up {
   position: fixed;
@@ -761,8 +774,9 @@
 }
 .sec9 .lower-blog .blogs .blog figcaption {
   position: absolute;
+  margin-left: 30px;
   opacity: 0;
-  margin: 25px;
+  transform: translateY(-250px);
 }
 .sec9 .lower-blog .blogs .blog figcaption img {
   margin-right: 10px;
@@ -779,7 +793,6 @@
 }
 .sec9 .lower-blog .blogs .blog:hover figcaption {
   transition: all 0.5s ease-in-out;
-  transform: translate(10px, 10px);
   opacity: 100%;
 }
 .sec9 .lower-blog .blogs .blog img {
@@ -844,9 +857,8 @@ footer .reseaux .video video {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scaleX(-1.5);
+  transform: scaleX(-1.2);
   filter: saturate(200%) blur(2px);
-  box-shadow: inset 0 4px 5px rgba(255, 255, 255, 0.768627451), inset 0 2px 2px rgba(255, 255, 255, 0.8), inset 0 -2px 4px rgba(255, 255, 255, 0.5019607843);
   z-index: 1;
 }
 footer .reseaux .video button {
