@@ -1007,24 +1007,7 @@ footer{
 
     /*----------Settings----------*/
     .settings{
-        position: fixed;
-        top: 30%;
-        background-color: rgb(61, 62, 66);
-        padding: 15px 15px;
-        img{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            animation: rotating 3.6s linear infinite;
-            @keyframes rotating {
-                from {
-                transform: rotate(0deg);
-                }
-                to {
-                transform: rotate(360deg);
-                }
-            }
-            }     
+        display: none;    
     }
 
     /*----------Section 1----------*/
@@ -1100,16 +1083,19 @@ footer{
     /*----------Section 2----------*/
     .sec2{
         height: max-content;
+        
         p{
             text-align: center;
         }
         .cases{
+            display: flex;
+            flex-direction: column;
             height: 100%;
             width: 100%;
-            overflow-y: scroll;
             padding: 50px 20px;
             justify-content: start;
             .case{
+                margin: 25px 0;
                 min-width: 95%;
             }
         }
@@ -1118,7 +1104,9 @@ footer{
     /*----------Section 3----------*/
     .sec3{
         height: max-content;
-
+        h3{
+            text-align: center;
+        }
     }
 
     /*----------Section 4----------*/
@@ -1131,12 +1119,10 @@ footer{
             margin-bottom: 25px;
         }
         .lower-team-page{
-            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
             justify-content: start;
             padding-bottom: 50px;
-            figure{
-                margin: 0 0 0 50px;
-            }
         }
     }
 
@@ -1152,9 +1138,13 @@ footer{
     .sec6{
         height: max-content;
         .images{
-            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
             justify-content: start;
-            padding: 100px 0;
+            padding: 50px 0;
+            img{
+                margin: 25px 0;
+            }
         }
     }
 

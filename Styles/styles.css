@@ -954,24 +954,7 @@ footer small {
   }
   /*----------Settings----------*/
   .settings {
-    position: fixed;
-    top: 30%;
-    background-color: rgb(61, 62, 66);
-    padding: 15px 15px;
-  }
-  .settings img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: rotating 3.6s linear infinite;
-  }
-  @keyframes rotating {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+    display: none;
   }
   /*----------Section 1----------*/
   .sec1 nav #myLinks {
@@ -1046,19 +1029,24 @@ footer small {
     text-align: center;
   }
   .sec2 .cases {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
     padding: 50px 20px;
     justify-content: start;
   }
   .sec2 .cases .case {
+    margin: 25px 0;
     min-width: 95%;
   }
   /*----------Section 3----------*/
   .sec3 {
     height: -moz-max-content;
     height: max-content;
+  }
+  .sec3 h3 {
+    text-align: center;
   }
   /*----------Section 4----------*/
   .sec4 {
@@ -1072,12 +1060,10 @@ footer small {
     font-size: 35px;
   }
   .sec4 .lower-team-page {
-    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
     justify-content: start;
     padding-bottom: 50px;
-  }
-  .sec4 .lower-team-page figure {
-    margin: 0 0 0 50px;
   }
   /*----------Section 5----------*/
   .sec5 button {
@@ -1090,9 +1076,13 @@ footer small {
     height: max-content;
   }
   .sec6 .images {
-    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
     justify-content: start;
-    padding: 100px 0;
+    padding: 50px 0;
+  }
+  .sec6 .images img {
+    margin: 25px 0;
   }
   /*----------Section 7----------*/
   .sec7 {
