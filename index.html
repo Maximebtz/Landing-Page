@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Landing Page</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
     <section id="home" class="sec1">
         <nav>
                 <div class="logo"><h1>Kucra</h1></div>
-                <ul class="list">
+                <ul class="list" id="myLinks">
                     <li class="list-content"><a href="#home">HOME</a></li>
                     <li class="list-content"><a href="#features">FEATURES</a></li>
                     <li class="list-content"><a href="#clients">CLIENT</a></li>
@@ -31,6 +32,9 @@
                     <li class="list-content"><a href="#blog">BLOG</a></li>
                     <li class="list-content"><a href="#contact">CONTACT</a></li>
                 </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
                 <div class="social-link">
                     <a href="https://www.instagram.com/" target="_blank"><img src="/img/fb.png" alt=""></a>
                     <a href="https://twitter.com/home?lang=fr" target="_blank"><img src="/img/tt.png" alt=""></a>
@@ -461,6 +465,6 @@
         </small>
     </footer>
     </div>
-    <script src="./Script.js"></script>
+    <script src="./JS/Script.js"></script>
 </body>
 </html>

@@ -48,8 +48,7 @@ body::-webkit-scrollbar-thumb {
   top: 30%;
   background-color: rgb(61, 62, 66);
   padding: 15px 15px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 0 5px 5px 0;
 }
 .settings img {
   display: flex;
@@ -67,6 +66,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*----------Section 1----------*/
+i.fa.fa-bars {
+  display: none;
+}
+
 .sec1 {
   background: radial-gradient(rgb(139, 195, 245), #1294b8);
   height: 969px;
@@ -150,7 +153,7 @@ body::-webkit-scrollbar-thumb {
 }
 .sec1 .page-one-content .left-content .input-email {
   max-width: 500px;
-  min-width: 400px;
+  min-width: 300px;
   width: 100%;
   width: 500px;
   height: 60px;
@@ -183,20 +186,13 @@ body::-webkit-scrollbar-thumb {
   background-color: ghostwhite;
   height: 969px;
 }
-.sec2 .cases {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  padding-top: 250px;
-}
 .sec2 h3 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 45px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .sec2 p {
   display: flex;
@@ -205,6 +201,15 @@ body::-webkit-scrollbar-thumb {
   color: rgba(128, 128, 128, 0.5);
   line-height: 25px;
   font-size: 25px;
+  padding: 25px;
+}
+.sec2 .cases {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding-top: 250px;
 }
 .sec2 .case {
   display: flex;
@@ -213,7 +218,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   color: ghostwhite;
   height: 500px;
-  width: 500px;
+  max-width: 500px;
+  min-width: 250px;
   border-radius: 10px;
   background: radial-gradient(rgb(139, 195, 245), #1294b8);
   margin: 0 10px;
@@ -232,6 +238,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 2em;
 }
 .sec2 .case p {
@@ -245,12 +252,14 @@ body::-webkit-scrollbar-thumb {
   padding-top: 150px;
   background-color: rgb(240, 240, 240);
   height: 969px;
+  padding: 100px 25px;
 }
 .sec3 .page-3-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 25px;
 }
 .sec3 .page-3-content h3 {
   display: flex;
@@ -281,15 +290,17 @@ body::-webkit-scrollbar-thumb {
   justify-content: start;
   align-items: center;
   margin-bottom: 150px;
+  padding: 25px 25px;
 }
 .sec4 .upper-team-page h3 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 900px;
+  max-width: 900px;
   font-size: 45px;
   margin-bottom: 20px;
+  padding: 0 25px;
 }
 .sec4 .upper-team-page p {
   display: flex;
@@ -299,6 +310,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 900px;
   line-height: 25px;
   font-size: 25px;
+  padding: 0 25px;
 }
 .sec4 .lower-team-page {
   display: flex;
@@ -332,7 +344,7 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.1);
 }
 .sec4 .lower-team-page figure .overflow img {
-  width: 100%;
+  width: 250px;
   max-width: 250px;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -417,6 +429,7 @@ body::-webkit-scrollbar-thumb {
   color: rgba(248, 248, 255, 0.801);
   max-width: 1050px;
   font-size: large;
+  padding: 25px;
 }
 .sec5 .parallax-content button {
   width: 150px;
@@ -454,6 +467,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   font-size: 45px;
   margin-bottom: 20px;
+  text-align: center;
+  padding: 0 25px;
 }
 .sec6 p {
   display: flex;
@@ -464,13 +479,13 @@ body::-webkit-scrollbar-thumb {
   font-size: 25px;
   max-width: 750px;
   line-height: 40px;
+  padding: 0 25px;
 }
 .sec6 .images {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
   padding: 150px 10%;
 }
 .sec6 .images figure {
@@ -480,7 +495,7 @@ body::-webkit-scrollbar-thumb {
   padding: 0 25px;
 }
 .sec6 .images img {
-  width: 70%;
+  width: 10em;
   justify-content: center;
   opacity: 50%;
   transition: all 0.3s ease-in-out;
@@ -604,7 +619,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   color: black;
   height: 580px;
-  width: 430px;
+  max-width: 430px;
+  min-width: 300px;
   border-radius: 10px;
   background: ghostwhite;
   margin: 0 15px;
@@ -757,6 +773,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 700px;
   line-height: 25px;
   font-size: 25px;
+  padding: 0 25px;
 }
 .sec9 .lower-blog .blogs {
   display: flex;
@@ -904,4 +921,249 @@ footer small {
   align-items: center;
   margin-top: 40px;
   color: rgba(248, 248, 255, 0.5);
+}
+
+/***************RESPONSIVE***************/
+@media only screen and (max-width: 700px) {
+  i.fa.fa-bars {
+    display: block;
+  }
+  /*----------Go-Up----------*/
+  .go-up {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+  }
+  .go-up a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .go-up img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    border-radius: 50%;
+  }
+  .go-up img:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+  /*----------Settings----------*/
+  .settings {
+    position: fixed;
+    top: 30%;
+    background-color: rgb(61, 62, 66);
+    padding: 15px 15px;
+  }
+  .settings img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotating 3.6s linear infinite;
+  }
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /*----------Section 1----------*/
+  .sec1 nav #myLinks {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    margin: 0;
+    background-color: red;
+    width: 100%;
+    padding: 40px 0;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(10px) brightness(60%);
+            backdrop-filter: blur(10px) brightness(60%);
+    border-radius: 0 0 10px 10px;
+    border-bottom: rgba(0, 0, 0, 0.5) solid 1px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 30px 3px;
+  }
+  .sec1 nav #myLinks li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+    text-decoration: underline;
+    line-height: 50px;
+    color: rgba(248, 248, 255, 0.503);
+  }
+  .sec1 nav .icon {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    padding-right: 5%;
+    color: ghostwhite;
+    font-size: 2em;
+    text-decoration: none;
+  }
+  .sec1 nav .social-link {
+    display: none;
+  }
+  .sec1 nav .social-link a {
+    display: none;
+  }
+  .sec1 .page-one-content .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25px;
+  }
+  .sec1 .page-one-content .left-content .form {
+    width: 100%;
+  }
+  .sec1 .page-one-content .left-content .form .input-email {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+  }
+  .sec1 .page-one-content .left-content h2 {
+    text-align: center;
+  }
+  .sec1 .page-one-content img {
+    display: none;
+  }
+  /*----------Section 2----------*/
+  .sec2 {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .sec2 p {
+    text-align: center;
+  }
+  .sec2 .cases {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 50px 20px;
+    justify-content: start;
+  }
+  .sec2 .cases .case {
+    min-width: 95%;
+  }
+  /*----------Section 3----------*/
+  .sec3 {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  /*----------Section 4----------*/
+  .sec4 {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .sec4 .upper-team-page {
+    margin-bottom: 25px;
+  }
+  .sec4 .upper-team-page h3 {
+    font-size: 35px;
+  }
+  .sec4 .lower-team-page {
+    overflow-y: scroll;
+    justify-content: start;
+    padding-bottom: 50px;
+  }
+  .sec4 .lower-team-page figure {
+    margin: 0 0 0 50px;
+  }
+  /*----------Section 5----------*/
+  .sec5 button {
+    max-width: 90%;
+    min-width: 90%;
+  }
+  /*----------Section 6----------*/
+  .sec6 {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .sec6 .images {
+    overflow-y: scroll;
+    justify-content: start;
+    padding: 100px 0;
+  }
+  /*----------Section 7----------*/
+  .sec7 {
+    padding: 50px;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .sec7 .left-content-sec7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .sec7 .left-content-sec7 p {
+    text-align: center;
+  }
+  .sec7 .left-content-sec7 button {
+    max-width: 90%;
+    min-width: 90%;
+  }
+  .sec7 .right-content-sec7 {
+    display: none;
+  }
+  /*----------Section 8----------*/
+  .sec8 {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .sec8 .upper-price-page {
+    min-width: 250px;
+    width: 100%;
+    padding: 0 25px;
+  }
+  .sec8 .lower-price-page {
+    margin: 50px 0;
+    flex-direction: column;
+  }
+  .sec8 .lower-price-page .case2 {
+    margin: 50px 0;
+  }
+  /*----------Section 9----------*/
+  .sec9 {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .sec9 .lower-blog .blogs {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .sec9 .lower-blog .blogs .blog {
+    transform: scale(0.85);
+    margin: 0;
+  }
+  /*----------Footer----------*/
+  footer {
+    padding: 25px;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  footer .reseaux {
+    padding: 20px 0;
+  }
+  footer .middle-lign {
+    margin-top: 10px;
+    font-size: smaller;
+  }
+  footer .middle-lign span {
+    margin: 0 5%;
+  }
+  footer .video {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
